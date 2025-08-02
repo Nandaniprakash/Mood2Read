@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood2Read</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5f5dc; /* Beige */
+      color: #3e2c1c;
+    }
+
+    header {
+      background-color: #8b4513; /* Brown */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      border-bottom: 2px solid #8b4513;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      color: #5c3c1e;
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .book {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #d4c4aa;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .book img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .book-title {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .category-title {
+      margin-top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mood2Read 📚</h1>
+  <p>Find the perfect book by your mood, genre, or favorite author!</p>
+</header>
+
+<div class="section">
+
+  <!-- Mood Section -->
+  <h2>Mood-Based Recommendations</h2>
+  <div class="book-grid">
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Happy Book">
+      <div class="book-title">The House in the Cerulean Sea</div>
+      <p>Feeling Happy 😊</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71sBtM3Yi5L.jpg" alt="Sad Book">
+      <div class="book-title">It Ends With Us</div>
+      <p>Feeling Sad 😢</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71KilybDOoL.jpg" alt="Stressed Book">
+      <div class="book-title">The Comfort Book</div>
+      <p>Feeling Stressed 😩</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81pN3ZEXG8L.jpg" alt="Tired Book">
+      <div class="book-title">Legends & Lattes</div>
+      <p>Feeling Tired 💤</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg" alt="Angry Book">
+      <div class="book-title">The Poppy War</div>
+      <p>Feeling Angry 😠</p>
+    </div>
+  </div>
+
+  <!-- Genre Section -->
+  <h2 class="category-title">Genre-Based Recommendations</h2>
+  <div class="book-grid">
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71xBLRBYOiL.jpg" alt="Romance">
+      <div class="book-title">Beach Read</div>
+      <p>Romance 💞</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Fantasy">
+      <div class="book-title">The House in the Cerulean Sea</div>
+      <p>Fantasy ✨</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg" alt="Rom-Com">
+      <div class="book-title">The Flatshare</div>
+      <p>Rom-Com 💌</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81AFocW+92L.jpg" alt="Comedy">
+      <div class="book-title">Eleanor Oliphant Is Completely Fine</div>
+      <p>Comedy 😂</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81r+LN9uH2L.jpg" alt="Horror">
+      <div class="book-title">The Shining</div>
+      <p>Horror 👻</p>
+    </div>
+  </div>
+
+  <!-- Author Section -->
+  <h2 class="category-title">Author-Based Recommendations</h2>
+  <div class="book-grid">
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="TJ Klune">
+      <div class="book-title">The House in the Cerulean Sea</div>
+      <p>TJ Klune</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71xBLRBYOiL.jpg" alt="Emily Henry">
+      <div class="book-title">Beach Read</div>
+      <p>Emily Henry</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71UypkUjStL.jpg" alt="Ali Hazelwood">
+      <div class="book-title">The Love Hypothesis</div>
+      <p>Ali Hazelwood</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71sBtM3Yi5L.jpg" alt="Colleen Hoover">
+      <div class="book-title">It Ends With Us</div>
+      <p>Colleen Hoover</p>
+    </div>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="J.K. Rowling">
+      <div class="book-title">Harry Potter and the Sorcerer's Stone</div>
+      <p>J.K. Rowling</p>
+    </div>
+  </div>
+</div>
+<footer>
+  &copy; 2025 Mood2Read. All rights reserved.
+</footer>
+
+</body>
+</html>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "387241df-a9e1-4183-aed0-4f3e085a11a3", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "6e6667b9-54f8-4996-84f6-be1b8fe241ad", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
